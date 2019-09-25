@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap-3.3.7.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">   
+    <link rel="stylesheet" href="css/ui.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/base-functions.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <title>settings</title>
+  </head>
+  <body>
+    <div class="project-name">
+      <h2>Настройки</h2>
+    </div>
+
+    <div class="header">
+      <div class="current-date"></div>
+      <div class="indicator"></div>
+    </div>
+
+    <div class="body">
+	<div class="action-menu">
+	  <table class="setting-table">
+	    <tr>
+	      <td class="lbl">Инверсия выходного сигнала</td>
+	      <td class="control">
+		<a id="inversion" href="javascript:void(0)" class="btn btn-default" onclick="WebView.invertOut()">Выключена</a>
+	      </td>
+	    </tr>
+	    <tr>
+	      <td class="lbl">Настройка даты и времени</td>
+	      <td class="control">
+		<a id="time" href="javascript:void(0)" class="btn btn-default" onclick="WebView.openPage('time-settings')">--,--.--.-- --:--</a>
+	      </td>
+	    </tr>
+	    <tr>
+	      <td class="lbl">Настройка расписания включения</td>
+	      <td class="control">
+		<a href="javascript:void(0)" class="btn btn-default" onclick="WebView.openPage('scheduler')">Настроить</a>
+	      </td>
+	    </tr>
+	  </table>
+	</div>
+    </div>
+    <div class="settings-menu centerer">
+      <a class="btn btn-info" onclick="WebView.openPage('index')">Выход</a>
+    </div>
+  </body>
+</html>

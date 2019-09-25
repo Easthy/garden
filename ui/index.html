@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap-3.3.7.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">   
+    <link rel="stylesheet" href="css/ui.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/base-functions.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <title>index</title>
+  </head>
+  <body class="index-page">
+    <div class="project-name">
+    </div>
+
+    <div class="header">
+      <div class="current-date"></div>
+      <div class="indicator"></div>
+    </div>
+
+    <div class="body">
+      <div class="run-indicator"></div>
+      <div class="action-menu">
+	<a id="start" href="javascript:void(0)" class="btn btn-success">Пуск</a>
+	<a id="stop" href="javascript:void(0)" class="btn btn-danger">Стоп</a>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div class="settings-menu centerer">
+      <a class="btn btn-default" onclick="WebView.openPage('settings')">Настройки</a>
+      <a id="btn-manual" class="btn btn-default" onclick="WebView.openPage('manual')">Ручной режим</a>
+      <a id="btn-manual" class="btn btn-default" onclick="WebView.openPage('log')">Журнал</a>
+    </div>
+  </body>
+</html>

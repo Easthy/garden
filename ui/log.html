@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap-3.3.7.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">   
+    <link rel="stylesheet" href="css/ui.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/base-functions.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <title>settings</title>
+  </head>
+  <body>
+    <div class="project-name">
+      <h2>Последние события</h2>
+    </div>
+
+    <table id="log-table-header">
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Дата</th>
+                <th>Событие</th>
+                <th>Тип</th>
+            </tr>
+        </thead>
+    </table>
+    <div id="log-table-wrapper">
+        <table id="log-table">
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="settings-menu centerer">
+      <a class="btn btn-info" onclick="WebView.openPage('index')">Выход</a>
+    </div>
+    
+  <!-- Modal -->
+  <div class="modal fade" id="modal-window" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Сообщение</h4>
+        </div>
+        <div class="modal-body">
+          <p></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

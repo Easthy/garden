@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap-3.3.7.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">   
+    <link rel="stylesheet" href="css/ui.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/base-functions.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <title>settings</title>
+  </head>
+  <body>
+    <div class="project-name">
+      <h2>Установка даты и времени</h2>
+    </div>
+
+    <div class="">
+	<div class="time-menu centerer">
+	  <table class="setting-table">
+	    <tr>
+	      <td class="control">
+		<a id="time" href="javascript:void(0)" class="btn btn-default">--,--.--.-- --:--</a>
+	      </td>
+	    </tr>
+	  </table>
+	  <div class="clear"></div>
+	</div>
+	
+	<div class="time-menu time-selector">
+	  <table class="setting-table time-setting-table txt-center">
+	      <td>
+		<div id="datetimepicker12"></div>
+	      </td>
+	    </tr>
+	  </table>
+	  <div class="clear"></div>
+	</div>
+	<div class="clear"></div>
+    </div>
+    <div class="settings-menu centerer">
+      <a class="btn btn-info" onclick="WebView.openPage('index')">Выход</a>
+      <a class="btn btn-success" onclick="WebView.setTime($('#datetimepicker12').data('date'))">Сохранить</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap-3.3.7.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">   
+    <link rel="stylesheet" href="css/ui.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/base-functions.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <title>settings</title>
+  </head>
+  <body>
+    <div class="project-name">
+      <h2>Задание расписания</h2>
+    </div>
+
+    <div class="scheduler">
+      <div class="scheduler-container">
+        <div class="row">
+              <div class="col-sm-12 bhoechie-tab-container">
+                  <div class="col-xs-1 bhoechie-tab-menu">
+                    <div class="list-group">
+                      <a href="javascript:void(0)" class="list-group-item text-center loadSchedule" data-day-n="0">
+                        Пн
+                      </a>
+                      <a href="javascript:void(0)" class="list-group-item text-center loadSchedule" data-day-n="1">
+                        Вт
+                      </a>
+                      <a href="javascript:void(0)" class="list-group-item text-center loadSchedule" data-day-n="2">
+                        Ср
+                      </a>
+                      <a href="javascript:void(0)" class="list-group-item text-center loadSchedule" data-day-n="3">
+                        Чт
+                      </a>
+                      <a href="javascript:void(0)" class="list-group-item text-center loadSchedule" data-day-n="4">
+                        Пт
+                      </a>
+                      <a href="javascript:void(0)" class="list-group-item text-center loadSchedule" data-day-n="5">
+                        Сб
+                      </a>
+                      <a href="javascript:void(0)" class="list-group-item text-center loadSchedule" data-day-n="6">
+                        Вс
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-11">
+                      <div class="active">
+                          <div class="col-1 col-xs-6">
+                            <center class="pin-selector-wrapper">
+                                <span>Выход № </span>
+                                <a href="javascript:void(0)" class="btn btn-default selectPin" data-direction="-1"><</a>
+                                <a id="out-number" href="javascript:void(0)" class="btn btn-default" data-out-n=""></a>
+                                <a href="javascript:void(0)" class="btn btn-default selectPin" data-direction="+1">></a>
+                            </center>
+                            <div class="wrp-1 centerer">
+                                <div class="lbl-1">С</div>
+                                <div id="ts"></div>
+                                <div class="lbl-1">По</div>
+                                <div id="te"></div>
+                                <div class="clear"></div>
+                            </div>
+                            <center class="menu-scheduler">
+                                <a class="btn btn-info pull-left" onclick="WebView.openPage('index')">Выход</a>
+                                <a class="btn btn-success pull-right addSchedule">Добавить</a>
+                                <div class="clear"></div>
+                            </center>
+                          </div>
+                          
+                          <div class="col-2 col-xs-6">
+                            <div id="schedules">
+                            </div>
+                            <div class="row-1">
+                                <a href="javascript:void(0)" class="btn btn-default copyDay">Копировать</a>
+                                <span class="lbl-2">в</span>
+                                <a href="javascript:void(0)" class="btn btn-default selectDay" data-direction="-1"><</a>
+                                <a id="week-day" href="javascript:void(0)" class="btn btn-default" data-d="0">Пн</a> 
+                                <a href="javascript:void(0)" class="btn btn-default selectDay" data-direction="+1">></a>
+                            </div>
+                            
+                            <div class="row-2">
+                              <a href="javascript:void(0)" class="btn btn-default copyWeek">Копировать на все дни</a>
+                            </div>
+                          </div>
+                          <div class="clear"></div>
+                      </div>
+                  </div>
+              </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    
+  <!-- Modal -->
+  <div class="modal fade" id="modal-window" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Сообщение</h4>
+        </div>
+        <div class="modal-body">
+          <p></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
