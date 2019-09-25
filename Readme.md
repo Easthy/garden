@@ -1,10 +1,10 @@
 ## This application uses PyQt5 with QtWebkit engine to display user interface. Mode of pins ordering is GPIO.BOARD. This application checks CPU serial number, it can be disabled in Main.py file. 
 ### UI is displayed with 7 inch touch screen, connected via usb port. Application tested with Rapbian 9 stretch OS.
 ### Folder schemas contains Sprint Layout file with blueprint of GPIO board. It is ready to make an order to manufacture the GPIO board. GPIO board should be used as you can not connect relays to Rapberry Pi directly. 
-Resistor: should be about 1-1.5kOm 
-Transistor: 2N3904 (npn) 
-Diode: 1N4007 (you could use better one) 
-External clock: DS3231 
+Resistor: should be about 1-1.5kOm  
+Transistor: 2N3904 (npn)  
+Diode: 1N4007 (you could use better one)  
+External clock: DS3231  
  
 ### Required modules:
 1) pytz
@@ -18,14 +18,14 @@ External clock: DS3231
 `sudo pyinstaller -p /home/pi/Public/modules --add-data '/home/pi/Public/settings.json:.' --add-data '/home/pi/Public/local.db:.' run.py` 
  
 #### Autostart
-`sudo crontab -e`
-Add:
+`sudo crontab -e` 
+Add: 
 ```@reboot /bin/sh -c "export XAUTHORITY=/home/pi/.Xauthority; export DISPLAY=':0.0'; sleep 3; cd /home/pi/Downloads/dist/run; ./run --respawn" > /home/pi/Downloads/c.log 2>&1``` 
+ 
+#### Desktop shortcut 
+`sudo nano /home/pi/Desktop/run.desktop`  
 
-#### Desktop shortcut
-```sudo nano /home/pi/Desktop/run.desktop
-
-[Desktop Entry]
+```[Desktop Entry]
 Name=Пуск
 Comment=Пуск приложения
 Icon=/usr/share/pixmaps/openbox.xpm
