@@ -1,3 +1,6 @@
+[Watch the video](https://github.com/Easthy/garden/blob/master/garden.mp4)
+
+
 ## This application uses PyQt5 with QtWebkit engine to display user interface. Mode of pins ordering is GPIO.BOARD. This application checks CPU serial number, it can be disabled in Main.py file. 
 ### UI is displayed with 7 inch touch screen, connected via usb port. Application tested with Rapbian 9 stretch OS.
 ### Folder schemas contains Sprint Layout file with blueprint of GPIO board. It is ready to make an order to manufacture the GPIO board. GPIO board should be used as you can not connect relays to Rapberry Pi directly. 
